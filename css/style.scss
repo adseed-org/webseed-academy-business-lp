@@ -55,7 +55,8 @@ header {
       padding: 1.3rem 1rem;
     }
     .document_btn {
-      margin-right: .5rem;
+      // TODO:ホワイトペーパーを作ったら解禁
+      // margin-right: .5rem;
       background: -moz-linear-gradient(left, $document_btn_2, $document_btn_1);
       background: -webkit-linear-gradient(left, $document_btn_2, $document_btn_1);
       background: linear-gradient(to right, $document_btn_2, $document_btn_1);
@@ -116,7 +117,7 @@ nav {
 
 // FV
 .fv_wrap {
-  background-image: url(../img/FV_img_1500.png);
+  background-image: url('../img/FV_img_1500.png');
   background-size: cover;
   width: 100%;
   height: 80vh;
@@ -637,12 +638,13 @@ nav {
 
 // カリキュラム・料金
 .detail_wrap {
+  background-image: url('../img/detail_bg.png');
+  background-size: cover;
   h2 {
     color: $text;
   }
   table {
     width: 100%;
-    margin-bottom: 5rem;
     border-collapse: separate;
     border-spacing: 0.7rem 0.4rem;
     th {
@@ -658,6 +660,7 @@ nav {
       border: 1.5px solid $border_orange;
       padding: 1rem;
       line-height: 1.7rem;
+      background-color: $white;
       p {
         margin: 0;
       }
@@ -866,7 +869,8 @@ footer {
           font-size: 2.5rem;
         }
       }
-      .fv_contact_btn {
+      .fv_contact_btn,
+      .fv_document_btn {
         top: 400px;
         bottom: auto;
         left: 22%;
@@ -1000,6 +1004,10 @@ footer {
 }
 
 @media (max-width: 520px) {
+  .fv_wrap {
+    background-image: url('../img/FV_BG_SP.png');
+    background-size: cover;
+  }
   .contents {
     width: 95%;
   }
@@ -1024,7 +1032,8 @@ footer {
           font-size: 1.8rem;
         }
       }
-      .fv_contact_btn {
+      .fv_contact_btn,
+      .fv_document_btn {
         bottom: auto;
         left: 0;
         right: 0;

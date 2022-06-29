@@ -67,7 +67,6 @@ header .btn_wrap .contact_btn {
 }
 
 header .btn_wrap .document_btn {
-  margin-right: .5rem;
   background: -webkit-gradient(linear, left top, right top, from(#379CDB), to(#51E5E7));
   background: linear-gradient(to right, #379CDB, #51E5E7);
 }
@@ -134,7 +133,7 @@ nav ul li span {
 }
 
 .fv_wrap {
-  background-image: url(../img/FV_img_1500.png);
+  background-image: url("../img/FV_img_1500.png");
   background-size: cover;
   width: 100%;
   height: 80vh;
@@ -768,13 +767,17 @@ nav ul li span {
   line-height: 1.8rem;
 }
 
+.detail_wrap {
+  background-image: url("../img/detail_bg.png");
+  background-size: cover;
+}
+
 .detail_wrap h2 {
   color: #555555;
 }
 
 .detail_wrap table {
   width: 100%;
-  margin-bottom: 5rem;
   border-collapse: separate;
   border-spacing: 0.7rem 0.4rem;
 }
@@ -795,6 +798,7 @@ nav ul li span {
   border: 1.5px solid #FF832C;
   padding: 1rem;
   line-height: 1.7rem;
+  background-color: #fff;
 }
 
 .detail_wrap table td p {
@@ -1032,7 +1036,8 @@ footer a:hover {
   .fv_wrap .fv .catch_copy_wrap .catch_copy {
     font-size: 2.5rem;
   }
-  .fv_wrap .fv .fv_contact_btn {
+  .fv_wrap .fv .fv_contact_btn,
+  .fv_wrap .fv .fv_document_btn {
     top: 400px;
     bottom: auto;
     left: 22%;
@@ -1163,6 +1168,10 @@ footer a:hover {
 }
 
 @media (max-width: 520px) {
+  .fv_wrap {
+    background-image: url("../img/FV_BG_SP.png");
+    background-size: cover;
+  }
   .contents {
     width: 95%;
   }
@@ -1185,7 +1194,8 @@ footer a:hover {
   .fv_wrap .fv .catch_copy_wrap .catch_copy {
     font-size: 1.8rem;
   }
-  .fv_wrap .fv .fv_contact_btn {
+  .fv_wrap .fv .fv_contact_btn,
+  .fv_wrap .fv .fv_document_btn {
     bottom: auto;
     left: 0;
     right: 0;
