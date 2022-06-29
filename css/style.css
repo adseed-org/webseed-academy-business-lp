@@ -63,6 +63,8 @@ header .btn_wrap p {
 
 header .btn_wrap .document_btn,
 header .btn_wrap .contact_btn {
+  color: #fff !important;
+  text-decoration: none;
   padding: 1.3rem 1rem;
 }
 
@@ -174,6 +176,7 @@ nav ul li span {
 }
 
 .fv_wrap .fv .fv_document_btn {
+  text-decoration: none;
   background: -webkit-gradient(linear, left top, right top, from(#379CDB), to(#51E5E7));
   background: linear-gradient(to right, #379CDB, #51E5E7);
   border-radius: 3rem;
@@ -961,6 +964,8 @@ nav ul li span {
   -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
           box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
   padding: .5rem;
+  display: block;
+  text-decoration: none;
 }
 
 .cta_wrap .document_btn {

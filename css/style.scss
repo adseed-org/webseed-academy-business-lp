@@ -52,6 +52,8 @@ header {
     }
     .document_btn,
     .contact_btn {
+      color: $white !important;
+      text-decoration: none;
       padding: 1.3rem 1rem;
     }
     .document_btn {
@@ -150,6 +152,7 @@ nav {
       }
     }
     .fv_document_btn {
+      text-decoration: none;
       background: -moz-linear-gradient(left, $document_btn_2, $document_btn_1);
       background: -webkit-linear-gradient(left, $document_btn_2, $document_btn_1);
       background: linear-gradient(to right, $document_btn_2, $document_btn_1);
@@ -795,6 +798,8 @@ nav {
     color: $btn_text;
     box-shadow: 2px 2px 1px $shadow_1;
     padding: .5rem;
+    display: block;
+    text-decoration: none;
   }
   .document_btn {
     background: -moz-linear-gradient(left, $document_btn_2, $document_btn_1);
