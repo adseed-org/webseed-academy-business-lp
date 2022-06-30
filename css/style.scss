@@ -694,6 +694,14 @@ nav {
         padding: 0 1rem 1.2rem;
       }
     }
+    .option_details {
+      strong {
+        margin-left: 2rem;
+      }
+      small {
+        display: block;
+      }
+    }
   }
 }
 
@@ -855,6 +863,45 @@ footer {
     }
   }
 }
+
+@media (max-width: 1150px) {
+  .voc_wrap {
+    .voc_contents {
+      .voc_main {
+        flex-direction: column;
+        .img_wrap {
+          img {
+            width: 85%;
+            display: block;
+            margin: 0 auto 2rem;
+          }
+        }
+        .task_wrap {
+          flex-direction: column;
+          border-radius: .5rem;
+          .task_icon {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            letter-spacing: .07rem;
+            border-radius: 0.3rem 0.3rem 0 0;
+          }
+          p {
+            padding: 0;
+            margin: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .pad_br {
+    display: block !important;
+  }
+  .pc_br {
+    display: inline !important;
+  }
+}
+
 // 960pxまで
 @media (max-width: 960px) {
   .fv_wrap {
@@ -970,41 +1017,6 @@ footer {
         flex-direction: column-reverse !important;
       }
     }
-  }
-  .voc_wrap {
-    .voc_contents {
-      .voc_main {
-        flex-direction: column;
-        .img_wrap {
-          img {
-            width: 85%;
-            display: block;
-            margin: 0 auto 2rem;
-          }
-        }
-        .task_wrap {
-          flex-direction: column;
-          border-radius: .5rem;
-          .task_icon {
-            width: 100%;
-            padding: 0.5rem;
-            font-size: 1rem;
-            letter-spacing: .07rem;
-            border-radius: 0.3rem 0.3rem 0 0;
-          }
-          p {
-            padding: 0;
-            margin: 1rem;
-          }
-        }
-      }
-    }
-  }
-  .pad_br {
-    display: block !important;
-  }
-  .pc_br {
-    display: inline !important;
   }
 }
 
@@ -1166,6 +1178,15 @@ footer {
         }
         .notation {
           line-height: 1.5rem;
+        }
+      }
+      .option_detail_wrap {
+        align-items: initial;
+        .option_details {
+          span {
+            text-align: center;
+            display: block;
+          }
         }
       }
     }

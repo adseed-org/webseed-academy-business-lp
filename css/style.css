@@ -845,6 +845,14 @@ nav ul li span {
   padding: 0 1rem 1.2rem;
 }
 
+.detail_wrap table .option_details strong {
+  margin-left: 2rem;
+}
+
+.detail_wrap table .option_details small {
+  display: block;
+}
+
 .faq_wrap {
   margin: 0 auto;
   background-image: url("../img/FAQ_bg.png");
@@ -1023,6 +1031,44 @@ footer a:hover {
   }
 }
 
+@media (max-width: 1150px) {
+  .voc_wrap .voc_contents .voc_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .voc_wrap .voc_contents .voc_main .img_wrap img {
+    width: 85%;
+    display: block;
+    margin: 0 auto 2rem;
+  }
+  .voc_wrap .voc_contents .voc_main .task_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: .5rem;
+  }
+  .voc_wrap .voc_contents .voc_main .task_wrap .task_icon {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    letter-spacing: .07rem;
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+  .voc_wrap .voc_contents .voc_main .task_wrap p {
+    padding: 0;
+    margin: 1rem;
+  }
+  .pad_br {
+    display: block !important;
+  }
+  .pc_br {
+    display: inline !important;
+  }
+}
+
 @media (max-width: 960px) {
   .fv_wrap {
     height: auto;
@@ -1134,41 +1180,6 @@ footer a:hover {
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
-  }
-  .voc_wrap .voc_contents .voc_main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .voc_wrap .voc_contents .voc_main .img_wrap img {
-    width: 85%;
-    display: block;
-    margin: 0 auto 2rem;
-  }
-  .voc_wrap .voc_contents .voc_main .task_wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-radius: .5rem;
-  }
-  .voc_wrap .voc_contents .voc_main .task_wrap .task_icon {
-    width: 100%;
-    padding: 0.5rem;
-    font-size: 1rem;
-    letter-spacing: .07rem;
-    border-radius: 0.3rem 0.3rem 0 0;
-  }
-  .voc_wrap .voc_contents .voc_main .task_wrap p {
-    padding: 0;
-    margin: 1rem;
-  }
-  .pad_br {
-    display: block !important;
-  }
-  .pc_br {
-    display: inline !important;
   }
 }
 
@@ -1312,6 +1323,15 @@ footer a:hover {
   }
   .detail_wrap table .flow_wrap .notation {
     line-height: 1.5rem;
+  }
+  .detail_wrap table .option_detail_wrap {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .detail_wrap table .option_detail_wrap .option_details span {
+    text-align: center;
+    display: block;
   }
   .cta_wrap .contact_btn {
     width: 100%;
