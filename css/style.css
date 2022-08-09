@@ -1005,16 +1005,15 @@ footer a {
   color: #555555;
   text-decoration: none;
   border-left: 1px solid #333;
-  border-right: 1px solid #333;
-}
-
-footer a:last-child {
-  border: none;
 }
 
 footer a:hover {
   color: #555555;
   opacity: 0.8;
+}
+
+footer .contact a {
+  border-right: 1px solid #333;
 }
 
 .pc_br {

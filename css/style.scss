@@ -836,13 +836,14 @@ footer {
     color: $text;
     text-decoration: none;
     border-left: 1px solid #333;
-    border-right: 1px solid #333;
-    &:last-child {
-      border: none;
-    }
     &:hover {
       color: $text;
       opacity: 0.8;
+    }
+  }
+  .contact {
+    a {
+      border-right: 1px solid #333;
     }
   }
 }
