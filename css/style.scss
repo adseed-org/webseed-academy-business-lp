@@ -37,7 +37,7 @@ header {
   margin: auto;
   width: 100%;
   justify-content: space-between;
-  h1 {
+  .main-title {
     text-shadow: 0 0 50px $white;
     font-style: italic;
     margin: 0.5rem 1rem;
@@ -1030,7 +1030,7 @@ footer {
     width: 95%;
   }
   header {
-    h1 {
+    .main-title {
       font-size: 1.5rem;
     }
   }

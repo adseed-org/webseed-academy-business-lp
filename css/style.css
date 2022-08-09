@@ -42,7 +42,7 @@ header {
           justify-content: space-between;
 }
 
-header h1 {
+header .main-title {
   text-shadow: 0 0 50px #fff;
   font-style: italic;
   margin: 0.5rem 1rem;
@@ -1190,7 +1190,7 @@ footer .contact a {
   .contents {
     width: 95%;
   }
-  header h1 {
+  header .main-title {
     font-size: 1.5rem;
   }
   .fv_wrap {
