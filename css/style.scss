@@ -2,6 +2,8 @@
 
 body {
   color: $text;
+  // font-family: 'ヒラギノ角ゴシック','Hiragino Sans', sans-serif;
+  // font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
 }
 
 // メイン
@@ -702,6 +704,13 @@ nav {
         display: block;
       }
     }
+  }
+  .nav-link {
+    color: #FF822C;
+  }
+  .nav-pills .nav-link.active {
+    color: white;
+    background-color: #FF822C;
   }
 }
 
