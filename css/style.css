@@ -60,6 +60,7 @@ header .btn_wrap .contact_btn {
   color: #fff !important;
   text-decoration: none;
   padding: 1.3rem 1rem;
+  width: 128px;
 }
 header .btn_wrap .document_btn {
   background: -webkit-gradient(linear, left top, right top, from(#379CDB), to(#51E5E7));
@@ -81,6 +82,7 @@ nav {
   z-index: 999;
   left: 0;
   top: 20%;
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", sans-serif;
 }
 nav ul {
   padding: 0;
@@ -162,11 +164,8 @@ nav ul li span {
           box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.26);
   color: #fff;
   text-align: center;
-  width: 25%;
-  position: absolute;
-  bottom: 25%;
-  left: 23%;
   padding: 0.5rem;
+  display: block;
 }
 .fv_wrap .fv .fv_document_btn p {
   margin: 0;
@@ -177,28 +176,19 @@ nav ul li span {
 .fv_wrap .fv .fv_document_btn .cta_txext {
   font-size: 1.3rem;
 }
-.fv_wrap .fv .fv_contact_btn {
-  background: -webkit-gradient(linear, left top, right top, from(#F30603), to(#F5822C));
-  background: linear-gradient(to right, #F30603, #F5822C);
-  border-radius: 3rem;
-  -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.26);
-          box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.26);
-  color: #fff;
-  text-align: center;
-  width: 30%;
+.fv_wrap .fv .fv_btn_wrap {
+  width: 25%;
   position: absolute;
-  bottom: 25%;
+  bottom: 13%;
   left: 23%;
-  padding: 0.5rem;
 }
-.fv_wrap .fv .fv_contact_btn p {
-  margin: 0;
-}
-.fv_wrap .fv .fv_contact_btn .microcopy {
-  font-size: 0.9rem;
-}
-.fv_wrap .fv .fv_contact_btn .cta_txext {
-  font-size: 1.3rem;
+.fv_wrap .fv .fv_text {
+  color: #111;
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 0 0 15px white;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .fv_document_btn:hover,
@@ -727,6 +717,9 @@ nav ul li span {
 .detail_wrap table .option_details small {
   display: block;
 }
+.detail_wrap .nav-item {
+  margin: 0 0.5rem;
+}
 .detail_wrap .nav-link {
   color: #FF822C;
 }
@@ -946,8 +939,7 @@ footer .contact a {
   .fv_wrap .fv .catch_copy_wrap .catch_copy {
     font-size: 2.5rem;
   }
-  .fv_wrap .fv .fv_contact_btn,
-.fv_wrap .fv .fv_document_btn {
+  .fv_wrap .fv .fv_btn_wrap {
     top: 400px;
     bottom: auto;
     left: 22%;
@@ -1041,6 +1033,17 @@ footer .contact a {
             flex-direction: column-reverse !important;
   }
 }
+@media (max-width: 768px) {
+  .cta_wrap .btn_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cta_wrap .document_btn, .cta_wrap .contact_btn {
+    margin: 0.5rem auto 1rem;
+  }
+}
 @media (max-width: 520px) {
   .fv_wrap {
     background-image: url("../img/FV_BG_SP.png");
@@ -1068,8 +1071,8 @@ footer .contact a {
   .fv_wrap .fv .catch_copy_wrap .catch_copy {
     font-size: 1.8rem;
   }
-  .fv_wrap .fv .fv_contact_btn,
-.fv_wrap .fv .fv_document_btn {
+  .fv_wrap .fv .fv_btn_wrap {
+    top: 360px;
     bottom: auto;
     left: 0;
     right: 0;
@@ -1190,9 +1193,6 @@ footer .contact a {
   .detail_wrap table .option_detail_wrap .option_details span {
     text-align: center;
     display: block;
-  }
-  .cta_wrap .contact_btn {
-    width: 100%;
   }
   .cta_wrap .microcopy-wrap {
     width: 90%;

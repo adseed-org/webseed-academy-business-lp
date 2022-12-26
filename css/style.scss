@@ -2,8 +2,6 @@
 
 body {
   color: $text;
-  // font-family: 'ヒラギノ角ゴシック','Hiragino Sans', sans-serif;
-  // font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
 }
 
 // メイン
@@ -57,6 +55,7 @@ header {
       color: $white !important;
       text-decoration: none;
       padding: 1.3rem 1rem;
+      width: 128px;
     }
     .document_btn {
       // TODO:ホワイトペーパーを作ったら解禁
@@ -82,6 +81,7 @@ nav {
   z-index: 999;
   left: 0;
   top: 20%;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans', sans-serif;
   ul {
     padding: 0;
     li {
@@ -162,11 +162,8 @@ nav {
       box-shadow: 3px 3px 0px $shadow_1;
       color: $white;
       text-align: center;
-      width: 25%;
-      position: absolute;
-      bottom: 25%;
-      left: 23%;
       padding: .5rem;
+      display: block;
       p {
         margin: 0;
       }
@@ -177,28 +174,19 @@ nav {
         font-size: 1.3rem;
       }
     }
-    .fv_contact_btn {
-      background: -moz-linear-gradient(left, $contact_btn_2, $contact_btn_1);
-      background: -webkit-linear-gradient(left, $contact_btn_2, $contact_btn_1);
-      background: linear-gradient(to right, $contact_btn_2, $contact_btn_1);
-      border-radius: 3rem;
-      box-shadow: 3px 3px 0px $shadow_1;
-      color: $white;
-      text-align: center;
-      width: 30%;
+    .fv_btn_wrap {
+      width: 25%;
       position: absolute;
-      bottom: 25%;
+      bottom: 13%;
       left: 23%;
-      padding: .5rem;
-      p {
-        margin: 0;
-      }
-      .microcopy {
-        font-size: .9rem;
-      }
-      .cta_txext {
-        font-size: 1.3rem;
-      }
+    }
+    .fv_text {
+      color: #111;
+      font-weight: bold;
+      text-decoration: underline;
+      text-shadow: 0 0 15px white;
+      text-align: center;
+      margin-top: 20px;
     }
   }
 }
@@ -705,6 +693,9 @@ nav {
       }
     }
   }
+  .nav-item {
+    margin: 0 .5rem;
+  }
   .nav-link {
     color: #FF822C;
   }
@@ -931,8 +922,7 @@ footer {
           font-size: 2.5rem;
         }
       }
-      .fv_contact_btn,
-      .fv_document_btn {
+      .fv_btn_wrap {
         top: 400px;
         bottom: auto;
         left: 22%;
@@ -1030,6 +1020,17 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .cta_wrap {
+    .btn_wrap {
+    flex-direction: column;
+    }
+    .document_btn, .contact_btn {
+      margin: .5rem auto 1rem;
+    }
+  }
+}
+
 @media (max-width: 520px) {
   .fv_wrap {
     background-image: url('../img/FV_BG_SP.png');
@@ -1059,8 +1060,8 @@ footer {
           font-size: 1.8rem;
         }
       }
-      .fv_contact_btn,
-      .fv_document_btn {
+      .fv_btn_wrap {
+        top: 360px;
         bottom: auto;
         left: 0;
         right: 0;
@@ -1202,9 +1203,6 @@ footer {
     }
   }
   .cta_wrap {
-    .contact_btn {
-      width: 100%;
-    }
     .microcopy-wrap {
       width: 90%;
       .microcopy {
