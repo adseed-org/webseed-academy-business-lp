@@ -45,15 +45,14 @@
 </head>
 <body>
   <!-- ヘッダー -->
-  <header>
+  <header class="js-header">
     <h2 class="main-title">WebSeed Academy</h2>
     <div class="btn_wrap">
       <!-- ホワイトペーパーを作ったら解禁 -->
-      <!-- <div class="document_btn">
-        <p>無料資料</p>
-        <p>ダウンロード</p>
-      </div> -->
       <a class="document_btn sp_none" href="https://www.adseed.co.jp/contact/?wsa=1">
+        <p>資料請求</p>
+      </a>
+      <a class="contact_btn sp_none" href="https://www.adseed.co.jp/contact/?wsa=2">
         <p>お問い合わせ</p>
       </a>
     </div>
@@ -78,14 +77,13 @@
           <p class="catch_copy">オンライン研修</p>
         </h2>
         <!-- ホワイトペーパーを作ったら解禁 -->
-        <!-- <div class="fv_document_btn">
-          <p class="microcopy">\ 3分でわかる！WebSeed Academy /</p>
-          <p class="cta_txext">無料で資料ダウンロードする</p>
-        </div> -->
-        <a class="fv_document_btn" href="https://www.adseed.co.jp/contact/?wsa=1">
-          <p class="microcopy">\ 3分でわかる！WebSeed Academy /</p>
-          <p class="cta_txext">今すぐお問い合わせする</p>
-        </a>
+        <div class="fv_btn_wrap">
+          <a class="fv_document_btn" href="https://www.adseed.co.jp/contact/?wsa=1">
+            <p class="microcopy">&#92; 3分でわかる！WebSeed Academy /</p>
+            <p class="cta_txext">資料請求はこちら</p>
+          </a>
+          <a href="https://www.adseed.co.jp/contact/?wsa=2" class="fv_text">お見積り依頼、具体的なご相談はこちら</a>
+        </div>
       </div>
     </div>
     <!-- WebSeedAcademyについて -->
@@ -169,7 +167,7 @@
       <div class="contents">
         <div class="merit pt-5">
           <h2>
-            プログラマとして<span class="pad_br"></span>アサインされることのメリット
+            プログラマーとして<span class="pad_br"></span>アサインされることのメリット
             <span>MERIT</span>
           </h2>
           <div class="merit_contents">
@@ -191,7 +189,7 @@
                   </p>
                 </div>
                 <div class="notation">
-                  <p>3ヶ月目からプログラマとしてアサインで、</p>
+                  <p>3ヶ月目からプログラマーとしてアサインで、</p>
                   <p>12ヶ月後には75万円の差が出ます。</p>
                   <small>※モデルケースの場合</small>
                 </div>
@@ -223,7 +221,7 @@
           <div class="merit_graph_wrap">
             <img class="merit_graph" src="./img/merit_graph.png" alt="">
             <div class="notation">
-              <p>3ヶ月目からプログラマとしてアサインで、</p>
+              <p>3ヶ月目からプログラマーとしてアサインで、</p>
               <p>12ヶ月後には75万円の差が出ます。</p>
               <small>※モデルケースの場合</small>
             </div>
@@ -242,16 +240,16 @@
           <div class="btn_wrap">
             <!-- 資料ダウンロード -->
             <!-- ホワイトペーパーを作ったら解禁 -->
-            <!-- <div class="btn_contents me-5">
-              <p class="mb-2">詳細資料を今すぐダウンロード</p>
-              <div class="document_btn">
-                <p>資料ダウンロード</p>
-              </div>
-            </div> -->
+            <div class="btn_contents me-md-5">
+              <p class="mb-2">詳細資料を確認</p>
+              <a class="document_btn" href="https://www.adseed.co.jp/contact/?wsa=1">
+                <p>資料請求はこちら</p>
+              </a>
+            </div>
             <!-- お問合せ -->
             <div class="btn_contents">
               <p class="mb-2">研修についてのご質問・お問合せはこちら</p>
-              <a class="document_btn" href="https://www.adseed.co.jp/contact/?wsa=1">
+              <a class="contact_btn" href="https://www.adseed.co.jp/contact/?wsa=2">
                 <p>お問い合せする</p>
               </a>
             </div>
@@ -406,16 +404,16 @@
           <div class="btn_wrap">
             <!-- 資料ダウンロード -->
             <!-- ホワイトペーパーを作ったら解禁 -->
-            <!-- <div class="btn_contents me-5">
-              <p class="mb-2">詳細資料を今すぐダウンロード</p>
-              <div class="document_btn">
-                <p>資料ダウンロード</p>
-              </div>
-            </div> -->
+            <div class="btn_contents me-md-5">
+              <p class="mb-2">詳細資料を確認</p>
+              <a class="document_btn" href="https://www.adseed.co.jp/contact/?wsa=1">
+                <p>資料請求はこちら</p>
+              </a>
+            </div>
             <!-- お問合せ -->
             <div class="btn_contents">
               <p class="mb-2">研修についてのご質問・お問合せはこちら</p>
-              <a class="document_btn" href="https://www.adseed.co.jp/contact/?wsa=1">
+              <a class="contact_btn" href="https://www.adseed.co.jp/contact/?wsa=2">
                 <p>お問い合せする</p>
               </a>
             </div>
@@ -428,77 +426,184 @@
       <div class="contents">
         <div class="detail pt-5 pb-5">
           <h2>カリキュラムの流れ・料金<span>DETAIL</span></h2>
-          <table>
-            <tr>
-              <th>料金</th>
-              <td class="price_wrap">
-                <p>３ヶ月コース</p>
-                <p class="price"><strong>630,000</strong> 〜 円（税抜）</p>
-              </td>
-            </tr>
-            <tr>
-              <th>実施方法</th>
-              <td>
-                <p>オンライン受講</p>
-              </td>
-            </tr>
-            <tr>
-              <th>フォロー体制</th>
-              <td>
-                <p>専用のSlackチャンネルにて質問可能</p>
-                <p>質問については授業時間内は何回でも可能</p>
-              </td>
-            </tr>
-            <tr>
-              <th>流れ</th>
-              <td class="flow_wrap">
-                <div>
-                  <p class="schedule">1日目</p>
-                  <p>オリエンテーション、環境構築、ナレッジ教育1</p>
-                </div>
-                <div>
-                  <p class="schedule">2 - 8日目</p>
-                  <p>HTML・CSS、Webシステムの基礎、オブジェクト指向</p>
-                </div>
-                <div>
-                  <p class="schedule">9 - 13日目</p>
-                  <p>ロジック演習一式</p>
-                </div>
-                <div>
-                  <p class="schedule">14 - 15日目</p>
-                  <p>Laravel環境構築一式</p>
-                </div>
-                <div>
-                  <p class="schedule">16 - 31日目</p>
-                  <p>フレームワーク演習課題一式</p>
-                </div>
-                <div>
-                  <p class="schedule">32日目</p>
-                  <p>ナレッジ教育2(セキュリティ〜IT用語集)</p>
-                </div>
-                <div class="practice">
-                  <p class="schedule">33 - 50日目</p>
-                  <p>プログラミング実践(模擬開発)</p>
-                </div>
-                <div class="notation">
-                  <p>※ 研修期間は3ヶ月間実施いたします。</p>
-                  <p>※ 長期休暇等、月によって稼働日が前後するため上記は50日で終了する予定表となっています。</p>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <th>オプション</th>
-              <td class="option_detail_wrap">
-                <p class="option_details">
-                  面談 + スキルシート対策 <span><strong>70,000</strong> 円（税抜）</span>
-                </p>
-                <p class="option_details mt-2">
-                  React演習課題一式 <span><strong>200,000</strong> 円（税抜）</span>
-                  <small class="ml-2">※ Reactのオプション選択時は、1ヶ月研修期間が延長されます。</small>
-                </p>
-              </td>
-            </tr>
-          </table>
+          <ul class="nav nav-pills justify-content-center" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="php-detail-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#php-detail"
+                type="button"
+                role="tab"
+                aria-controls="php-detail"
+                aria-selected="true"
+              >
+                PHP
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-link"
+                id="java-detail-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#java-detail"
+                type="button"
+                role="tab"
+                aria-controls="java-detail"
+                aria-selected="false"
+              >
+                Java
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="php-detail" class="tab-pane active" role="tabpanel" aria-labelledby="php-detail-tab">
+              <table>
+                <tr>
+                  <th>料金</th>
+                  <td class="price_wrap">
+                    <p>３ヶ月コース</p>
+                    <p class="price"><strong>630,000</strong> 円（税抜）/ 人</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>実施方法</th>
+                  <td>
+                    <p>オンライン受講</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>フォロー体制</th>
+                  <td>
+                    <p>専用のSlackチャンネルにて質問可能</p>
+                    <p>質問については授業時間内は何回でも可能</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>流れ</th>
+                  <td class="flow_wrap">
+                    <div>
+                      <p class="schedule">1日目</p>
+                      <p>オリエンテーション、環境構築、ナレッジ教育1</p>
+                    </div>
+                    <div>
+                      <p class="schedule">2 - 8日目</p>
+                      <p>HTML・CSS・JavaScript・PHP・SQL、Webシステムの基礎、オブジェクト指向</p>
+                    </div>
+                    <div>
+                      <p class="schedule">9 - 13日目</p>
+                      <p>ロジック演習一式</p>
+                    </div>
+                    <div>
+                      <p class="schedule">14 - 15日目</p>
+                      <p>Laravel環境構築一式</p>
+                    </div>
+                    <div>
+                      <p class="schedule">16 - 31日目</p>
+                      <p>フレームワーク演習課題一式</p>
+                    </div>
+                    <div>
+                      <p class="schedule">32日目</p>
+                      <p>ナレッジ教育2(セキュリティ〜IT用語集)</p>
+                    </div>
+                    <div class="practice">
+                      <p class="schedule">33 - 50日目</p>
+                      <p>プログラミング実践(模擬開発)</p>
+                    </div>
+                    <div class="notation">
+                      <p>※ 研修期間は3ヶ月間実施いたします。</p>
+                      <p>※ 長期休暇等、月によって稼働日が前後するため上記は50日で終了する予定表となっています。</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>オプション</th>
+                  <td class="option_detail_wrap">
+                    <p class="option_details">
+                      面談 + スキルシート対策 <span><strong>70,000</strong> 円（税抜）/ 人</span>
+                    </p>
+                    <p class="option_details mt-2">
+                      React演習課題一式 <span><strong>200,000</strong> 円（税抜）/ 人</span>
+                      <small class="ml-2">※ Reactのオプション選択時は、1ヶ月研修期間が延長されます。</small>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div id="java-detail" class="tab-pane" role="tabpanel" aria-labelledby="java-detail-tab">
+              <table>
+                <tr>
+                  <th>料金</th>
+                  <td class="price_wrap">
+                    <p>３ヶ月コース</p>
+                    <p class="price"><strong>630,000</strong> 円（税抜）/ 人</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>実施方法</th>
+                  <td>
+                    <p>オンライン受講</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>フォロー体制</th>
+                  <td>
+                    <p>専用のSlackチャンネルにて質問可能</p>
+                    <p>質問については授業時間内は何回でも可能</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>流れ</th>
+                  <td class="flow_wrap">
+                    <div>
+                      <p class="schedule">1日目</p>
+                      <p>オリエンテーション、環境構築、ナレッジ教育1</p>
+                    </div>
+                    <div>
+                      <p class="schedule">2 - 8日目</p>
+                      <p>HTML・CSS・JavaScript・Java・SQL、Webシステムの基礎、オブジェクト指向</p>
+                    </div>
+                    <div>
+                      <p class="schedule">9 - 13日目</p>
+                      <p>ロジック演習一式</p>
+                    </div>
+                    <div>
+                      <p class="schedule">14 - 15日目</p>
+                      <p>SpringBoot環境構築一式</p>
+                    </div>
+                    <div>
+                      <p class="schedule">16 - 31日目</p>
+                      <p>フレームワーク演習課題一式</p>
+                    </div>
+                    <div>
+                      <p class="schedule">32日目</p>
+                      <p>ナレッジ教育2(セキュリティ〜IT用語集)</p>
+                    </div>
+                    <div class="practice">
+                      <p class="schedule">33 - 50日目</p>
+                      <p>プログラミング実践(模擬開発)</p>
+                    </div>
+                    <div class="notation">
+                      <p>※ 研修期間は3ヶ月間実施いたします。</p>
+                      <p>※ 長期休暇等、月によって稼働日が前後するため上記は50日で終了する予定表となっています。</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>オプション</th>
+                  <td class="option_detail_wrap">
+                    <p class="option_details">
+                      面談 + スキルシート対策 <span><strong>70,000</strong> 円（税抜）/ 人</span>
+                    </p>
+                    <p class="option_details mt-2">
+                      React演習課題一式 <span><strong>200,000</strong> 円（税抜）/ 人</span>
+                      <small class="ml-2">※ Reactのオプション選択時は、1ヶ月研修期間が延長されます。</small>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -635,16 +740,16 @@
           <div class="btn_wrap">
             <!-- 資料ダウンロード -->
             <!-- ホワイトペーパーを作ったら解禁 -->
-            <!-- <div class="btn_contents me-5">
-              <p class="mb-2">詳細資料を今すぐダウンロード</p>
-              <div class="document_btn">
-                <p>資料ダウンロード</p>
-              </div>
-            </div> -->
+            <div class="btn_contents me-md-5">
+              <p class="mb-2">詳細資料を確認</p>
+              <a class="document_btn" href="https://www.adseed.co.jp/contact/?wsa=1">
+                <p>資料請求はこちら</p>
+              </a>
+            </div>
             <!-- お問合せ -->
             <div class="btn_contents">
               <p class="mb-2">研修についてのご質問・お問合せはこちら</p>
-              <a class="document_btn" href="https://www.adseed.co.jp/contact/?wsa=1">
+              <a class="contact_btn" href="https://www.adseed.co.jp/contact/?wsa=2">
                 <p>お問い合せする</p>
               </a>
             </div>
@@ -671,5 +776,8 @@
       <small>Copyright &copy; 2016 Adseed,inc All Right Reserved.</small>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/common.js"></script>
 </body>
 </html>
