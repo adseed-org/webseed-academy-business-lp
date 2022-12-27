@@ -79,7 +79,6 @@ header .btn_wrap .contact_btn {
 
 .header-bg {
   background-color: rgba(255, 255, 255, 0.5);
-  transition: .5s ease;
 }
 
 nav {
@@ -194,6 +193,7 @@ nav ul li span {
   text-shadow: 0 0 15px white;
   text-align: center;
   margin-top: 20px;
+  display: block;
 }
 
 .fv_document_btn:hover,
@@ -721,6 +721,9 @@ nav ul li span {
 }
 .detail_wrap table .option_details small {
   display: block;
+}
+.detail_wrap .nav {
+  margin-bottom: 1rem;
 }
 .detail_wrap .nav-item {
   margin: 0 0.5rem;

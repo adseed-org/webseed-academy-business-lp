@@ -190,6 +190,7 @@ nav {
       text-shadow: 0 0 15px white;
       text-align: center;
       margin-top: 20px;
+      display: block;
     }
   }
 }
@@ -695,6 +696,9 @@ nav {
         display: block;
       }
     }
+  }
+  .nav {
+    margin-bottom: 1rem;
   }
   .nav-item {
     margin: 0 .5rem;
