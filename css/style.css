@@ -77,6 +77,11 @@ header .btn_wrap .contact_btn {
           align-items: center;
 }
 
+.header-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: .5s ease;
+}
+
 nav {
   position: fixed;
   z-index: 999;
