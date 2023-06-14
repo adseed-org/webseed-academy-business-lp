@@ -28,16 +28,11 @@ header {
   top: 0;
   background-color: rgba(255, 255, 255, 0);
   z-index: 999;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: auto;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 header .main-title {
   text-shadow: 0 0 50px #fff;
@@ -46,8 +41,6 @@ header .main-title {
   font-size: 2rem;
 }
 header .btn_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
   color: #fff;
@@ -63,18 +56,12 @@ header .btn_wrap .contact_btn {
   width: 128px;
 }
 header .btn_wrap .document_btn {
-  background: -webkit-gradient(linear, left top, right top, from(#379CDB), to(#51E5E7));
   background: linear-gradient(to right, #379CDB, #51E5E7);
 }
 header .btn_wrap .contact_btn {
-  background: -webkit-gradient(linear, left top, right top, from(#F30603), to(#F5822C));
   background: linear-gradient(to right, #F30603, #F5822C);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header-bg {
@@ -129,7 +116,7 @@ nav ul li span {
   background-size: cover;
   width: 100%;
   height: 80vh;
-  min-height: 700px;
+  min-height: 650px;
 }
 .fv_wrap .fv {
   position: relative;
@@ -147,6 +134,9 @@ nav ul li span {
 .fv_wrap .fv .catch_copy_wrap .heading {
   font-size: 2rem;
 }
+.fv_wrap .fv .catch_copy_wrap .heading .under_line {
+  background: linear-gradient(to bottom, transparent 45%, #FCFF77 45%);
+}
 .fv_wrap .fv .catch_copy_wrap .heading .dot_text {
   padding-top: 0.4em;
   background-position: top left -2px;
@@ -161,11 +151,9 @@ nav ul li span {
 }
 .fv_wrap .fv .fv_document_btn {
   text-decoration: none;
-  background: -webkit-gradient(linear, left top, right top, from(#379CDB), to(#51E5E7));
   background: linear-gradient(to right, #379CDB, #51E5E7);
   border-radius: 3rem;
-  -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.26);
-          box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.26);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.26);
   color: #fff;
   text-align: center;
   padding: 0.5rem;
@@ -184,7 +172,7 @@ nav ul li span {
 .fv_wrap .fv .fv_btn_wrap {
   width: 25%;
   position: absolute;
-  bottom: 13%;
+  bottom: 20%;
   left: 23%;
 }
 .fv_wrap .fv .fv_text {
@@ -208,12 +196,8 @@ nav ul li span {
   color: #555555;
 }
 .wsa_wrap .icon_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .wsa_wrap .icon_wrap .img_wrap {
   width: 15%;
@@ -233,7 +217,7 @@ nav ul li span {
   margin: 4rem 0;
 }
 .wsa_wrap .wsa_info p span {
-  color: #FF842C;
+  color: #F9BF00;
 }
 .wsa_wrap .wsa_info p span strong {
   font-size: 3.5rem;
@@ -247,77 +231,39 @@ nav ul li span {
   width: 80%;
 }
 .solution_wrap .solution_contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .solution_wrap .solution_contents .solution_box {
-  width: 45%;
+  width: 60%;
   margin: 0 1rem;
   background-color: #F5F5F5;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
   border-radius: 1rem;
   text-align: center;
   color: #707070;
   position: relative;
 }
 .solution_wrap .solution_contents .solution_box .title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 1rem 1rem 0 0;
   color: #fff;
   text-align: center;
   font-weight: bold;
   padding: 0.6rem;
-  background: -webkit-gradient(linear, left top, right top, from(#F50D06), to(#FF822A));
   background: linear-gradient(to right, #F50D06, #FF822A);
 }
-.solution_wrap .solution_contents .solution_box .arrow_bar {
-  position: absolute;
-  background-color: #DADADA;
-  width: 30px;
-  height: 49.5%;
-  margin: auto;
-  top: 25%;
-  left: 0;
-  right: 0;
-}
-.solution_wrap .solution_contents .solution_box .arrow_head {
-  position: absolute;
-  content: "";
-  width: 15px;
-  height: 3%;
-  border: solid 15px transparent;
-  border-top: solid 15px #DADADA;
-  margin: auto;
-  top: 74.4%;
-  left: 0;
-  right: 0;
+.solution_wrap .solution_contents .solution_box .detail {
+  padding: 0 2rem;
 }
 .solution_wrap .solution_contents .solution_box p {
   margin: 0;
-}
-.solution_wrap .solution_contents .solution_box .solution_list {
-  margin: 1.5rem;
-  background-color: #fff;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
-  border-radius: 0.25rem;
-  padding: 1rem;
-  height: 5rem;
-  position: relative;
-  z-index: 100;
-}
-.solution_wrap .solution_contents .solution_box .solution_list .one_line {
-  line-height: 3rem;
+  margin-top: 1.1rem;
+  text-align: left;
 }
 .solution_wrap .solution_contents .solution_box .under_line {
   color: #555555;
   font-weight: bold;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, transparent), color-stop(45%, #FCFF77));
   background: linear-gradient(to bottom, transparent 45%, #FCFF77 45%);
 }
 .solution_wrap .solution_contents .solution_box .benefit {
@@ -327,128 +273,60 @@ nav ul li span {
   font-size: 1.5rem;
 }
 
-.merit_wrap {
-  background-color: #FEFAF3;
-  padding: 0 0 5rem;
+.reason_wrap .reason_contents {
+  width: 60%;
+  margin: 5rem auto 7rem;
 }
-.merit_wrap h2 {
-  color: #555555;
+.reason_wrap .reason_contents h2 {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
 }
-.merit_wrap .merit_contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #707070;
-}
-.merit_wrap .merit_contents .left_merit .left_merit_1 {
-  margin-right: 5rem;
-}
-.merit_wrap .merit_contents .left_merit .left_merit_1 p {
-  margin: 0 0 0.3rem;
-}
-.merit_wrap .merit_contents .left_merit .arrow {
-  margin: 1rem 7rem;
-  width: 10%;
-  height: 8.5%;
-  border: 3.5px solid;
-  border-color: transparent transparent #FF832C #FF832C;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-.merit_wrap .merit_contents .left_merit .left_merit_2 {
-  margin-top: 2.5rem;
-}
-.merit_wrap .merit_contents .left_merit .left_merit_2 .merit {
+.reason_wrap .reason_contents h4 {
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
-.merit_wrap .merit_contents .left_merit .left_merit_2 .merit p {
-  font-size: 2rem;
-  margin: 0;
-  line-height: 2.5rem;
+.reason_wrap .reason_contents img {
+  width: 100%;
 }
-.merit_wrap .merit_contents .left_merit .left_merit_2 .merit p span {
-  color: #FF6A00;
-}
-.merit_wrap .merit_contents .left_merit .left_merit_2 .merit p span strong {
-  font-size: 2.7rem;
-  font-weight: 400;
-}
-.merit_wrap .merit_contents .left_merit .left_merit_2 .notation {
-  font-size: 0.8rem;
-}
-.merit_wrap .merit_contents .left_merit .left_merit_2 .notation p {
-  margin: 0 0 0.1rem;
-}
-.merit_wrap .merit_contents .right_merit {
-  margin-left: 5rem;
-}
-.merit_wrap .merit_contents .right_merit .merit_card {
-  background-color: #fff;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
-  padding: 1rem 3rem 0;
-  border-radius: 0.3rem;
-  text-align: center;
-}
-.merit_wrap .merit_contents .right_merit .merit_card p {
-  margin: 0;
-}
-.merit_wrap .merit_contents .right_merit .merit_card .title {
-  font-size: 0.9rem;
-  color: #FF842C;
-}
-.merit_wrap .merit_contents .right_merit .merit_card .compare {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.reason_wrap .reason_contents .details_wrap {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.7rem;
-  margin-top: 0.5rem;
-}
-.merit_wrap .merit_contents .right_merit .merit_card .compare p {
-  line-height: 4.5rem;
-}
-.merit_wrap .merit_contents .right_merit .merit_card .compare span {
-  vertical-align: bottom;
-}
-.merit_wrap .merit_contents .right_merit .merit_card .compare span strong {
-  font-weight: 300;
-  font-size: 2.5rem;
-}
-.merit_wrap .merit_contents .right_merit .merit_card .compare .after_training {
-  color: #FF6A00;
-}
-.merit_wrap .merit_contents .right_merit .arrow {
-  margin: 1rem auto 2.5rem;
+  margin-bottom: 5rem;
+  gap: 3rem;
   position: relative;
-  height: 35px;
-  width: 30px;
-  background-color: #FECDAA;
 }
-.merit_wrap .merit_contents .right_merit .arrow:before {
-  position: absolute;
-  content: "";
-  border: solid 30px transparent;
-  border-top: solid 30px #FECDAA;
-  top: 30px;
-  right: -15px;
-}
-.merit_wrap .merit_graph_wrap {
-  width: 100%;
-  margin: 4rem auto 0;
+.reason_wrap .reason_contents .details_wrap .details {
+  width: 50%;
   text-align: center;
 }
-.merit_wrap .merit_graph_wrap .merit_graph {
-  width: 100%;
-  height: 100%;
+.reason_wrap .reason_contents .details_wrap .details .icon {
+  margin: 1rem auto;
+  background-color: #F9BF00;
+  color: #fff;
+  border-radius: 9999px;
+  width: 10rem;
+  text-align: center;
+  padding: 1rem;
 }
-.merit_wrap .merit_graph_wrap .notation {
-  display: none;
+.reason_wrap .reason_contents .details_wrap .details .img_wrap img {
+  width: 350px;
+  height: 216px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+.reason_wrap .reason_contents .details_wrap .details .text {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: left;
+  min-width: 50%;
+}
+.reason_wrap .reason_contents .details_wrap .arrow_wrap {
+  border-top: solid 10px #F9BF00;
+  border-right: solid 10px #F9BF00;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 45%;
+  left: 46.6%;
 }
 
 .method_wrap h2 {
@@ -462,12 +340,8 @@ nav ul li span {
   margin-bottom: 2rem;
 }
 .method_wrap .method_contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  align-items: end;
   margin: 4.5rem 0 5rem;
 }
 .method_wrap .method_contents .img_wrap {
@@ -488,8 +362,7 @@ nav ul li span {
 }
 .method_wrap .method_contents .method_card_wrap {
   background-color: #fff;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.26);
   padding: 2.5rem;
   bottom: 0;
   width: 50%;
@@ -500,12 +373,8 @@ nav ul li span {
   margin-left: 15rem;
 }
 .method_wrap .method_contents h3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 .method_wrap .method_contents h3 strong {
@@ -523,8 +392,6 @@ nav ul li span {
   margin-bottom: -3rem;
 }
 .method_wrap .method_3_icon_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .method_wrap .method_3_icon_wrap p {
@@ -534,8 +401,6 @@ nav ul li span {
   margin: 0 auto;
 }
 .method_wrap .method_4_icon_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .method_wrap .method_4_icon_wrap p {
@@ -571,14 +436,11 @@ nav ul li span {
 }
 .voc_wrap .voc_contents {
   background-color: #fff;
-  -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
-          box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
   padding: 2rem;
   margin-bottom: 1rem;
 }
 .voc_wrap .voc_contents .voc_main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 4rem;
 }
@@ -586,8 +448,7 @@ nav ul li span {
   margin-right: 2rem;
 }
 .voc_wrap .voc_contents .voc_main .img_wrap img {
-  -webkit-box-shadow: 5px 5px 1px #FECDAA;
-          box-shadow: 5px 5px 1px #FECDAA;
+  box-shadow: 5px 5px 1px #FECDAA;
 }
 .voc_wrap .voc_contents .voc_main .title {
   font-size: 1.2rem;
@@ -604,12 +465,8 @@ nav ul li span {
   border-radius: 3rem 0.5rem 0.5rem 3rem;
   border: 2px solid #FF832C;
   background-color: #FAFAFA;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .voc_wrap .voc_contents .voc_main .task_wrap .task_icon {
   width: 6rem;
@@ -676,9 +533,7 @@ nav ul li span {
   width: 25%;
 }
 .detail_wrap table td {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 1.5px solid #FF832C;
   padding: 1rem;
   line-height: 1.7rem;
@@ -688,8 +543,6 @@ nav ul li span {
   margin: 0;
 }
 .detail_wrap table .price_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .detail_wrap table .price_wrap strong {
@@ -700,8 +553,6 @@ nav ul li span {
   padding: 0;
 }
 .detail_wrap table .flow_wrap div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0.7rem 1rem;
   border-bottom: 1px solid #F1F1F1;
@@ -744,8 +595,7 @@ nav ul li span {
 }
 .faq_wrap .faq_list .faq_contents {
   background-color: #fff;
-  -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
-          box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
   border-radius: 0.3rem;
   padding: 1rem 1.5rem;
   margin-bottom: 1rem;
@@ -764,12 +614,8 @@ nav ul li span {
   margin-bottom: 1rem;
 }
 .faq_wrap .faq_list .faq_contents .a_contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .faq_wrap .faq_list .faq_contents .a_contents .a_title {
   color: #BBDBEC;
@@ -823,12 +669,8 @@ nav ul li span {
 }
 .cta_wrap .btn_wrap {
   margin: 2.5rem 0 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .cta_wrap .btn_wrap .btn_contents p {
   font-weight: bold;
@@ -839,18 +681,15 @@ nav ul li span {
 .cta_wrap .contact_btn {
   width: 20rem;
   color: #fff;
-  -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
-          box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.26);
   padding: 0.5rem;
   display: block;
   text-decoration: none;
 }
 .cta_wrap .document_btn {
-  background: -webkit-gradient(linear, left top, right top, from(#379CDB), to(#51E5E7));
   background: linear-gradient(to right, #379CDB, #51E5E7);
 }
 .cta_wrap .contact_btn {
-  background: -webkit-gradient(linear, left top, right top, from(#F30603), to(#F5822C));
   background: linear-gradient(to right, #F30603, #F5822C);
 }
 
@@ -859,12 +698,8 @@ footer img {
   display: block;
 }
 footer .footer_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 footer a {
   padding: 0 2rem;
@@ -895,10 +730,7 @@ footer .contact a {
 }
 @media (max-width: 1150px) {
   .voc_wrap .voc_contents .voc_main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .voc_wrap .voc_contents .voc_main .img_wrap img {
     width: 85%;
@@ -906,10 +738,7 @@ footer .contact a {
     margin: 0 auto 2rem;
   }
   .voc_wrap .voc_contents .voc_main .task_wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     border-radius: 0.5rem;
   }
   .voc_wrap .voc_contents .voc_main .task_wrap .task_icon {
@@ -961,71 +790,21 @@ footer .contact a {
   .wsa_wrap .wsa_info {
     font-size: 1.5rem;
   }
+  .reason_wrap .reason_contents {
+    width: 65%;
+  }
   .solution_wrap {
     background-size: cover;
   }
   .solution_wrap .solution_contents {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .solution_wrap .solution_contents .solution_box {
     width: 80%;
     margin: 2rem auto;
   }
-  .merit_wrap .merit_contents {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .merit_wrap .merit_contents .left_merit {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  .merit_wrap .merit_contents .left_merit .left_merit_1 {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .merit_wrap .merit_contents .left_merit .arrow {
-    width: 7.5%;
-    height: 44px;
-    margin: 0rem 45%;
-  }
-  .merit_wrap .merit_contents .left_merit .notation {
-    display: none;
-  }
-  .merit_wrap .merit_contents .right_merit {
-    margin: 0;
-  }
-  .merit_wrap .merit_contents .right_merit .merit_card {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1rem 0rem 0;
-  }
-  .merit_wrap .merit_contents .right_merit .merit_card .title {
-    font-size: 1.2rem;
-  }
-  .merit_wrap .merit_contents .right_merit .merit_card p {
-    font-size: 1.1rem;
-  }
-  .merit_wrap .merit_contents .right_merit .merit_card .compare {
-    font-weight: bold;
-  }
-  .merit_wrap .merit_graph_wrap .notation {
-    display: block;
-    text-align: left;
-  }
-  .merit_wrap .merit_graph_wrap .notation p {
-    margin-bottom: 0.2rem;
-  }
   .method_wrap .method_contents {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .method_wrap .method_contents .img_wrap {
     width: 65%;
@@ -1036,21 +815,53 @@ footer .contact a {
     margin: -5rem auto 0 !important;
   }
   .method_wrap .method_contents:nth-child(odd) {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: reverse !important;
-        -ms-flex-direction: column-reverse !important;
-            flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important;
   }
 }
 @media (max-width: 768px) {
+  .detail_wrap table .price_wrap strong {
+    margin: 0;
+  }
+  .solution_wrap .solution_contents .solution_box {
+    width: 100%;
+  }
   .cta_wrap .btn_wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .cta_wrap .document_btn, .cta_wrap .contact_btn {
     margin: 0.5rem auto 1rem;
+  }
+  .reason_wrap {
+    margin-bottom: 5rem;
+  }
+  .reason_wrap .reason_contents {
+    margin-bottom: 0;
+    width: 90%;
+  }
+  .solution_wrap .solution_contents .solution_box .benefit {
+    margin: 2rem 0;
+  }
+  .method_wrap .method_contents .method_card_wrap {
+    width: 85%;
+  }
+  .method_wrap .method_3_icon_wrap,
+  .method_wrap .method_4_icon_wrap {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .method_wrap .method_3_icon_wrap p,
+  .method_wrap .method_4_icon_wrap p {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .contents {
+    width: 85%;
+  }
+  .sp_w_5rem {
+    width: 5rem;
+  }
+  .sp_none {
+    display: none !important;
   }
 }
 @media (max-width: 520px) {
@@ -1068,8 +879,8 @@ footer .contact a {
     min-height: 500px;
   }
   .fv_wrap .fv .catch_copy_wrap {
-    top: 95px;
-    left: 7%;
+    top: 115px;
+    left: 6%;
   }
   .fv_wrap .fv .catch_copy_wrap .heading {
     font-size: 1.3rem;
@@ -1088,6 +899,9 @@ footer .contact a {
     margin: auto;
     width: 90%;
   }
+  .reason_wrap .reason_contents {
+    width: 95%;
+  }
   .wsa_wrap .wsa_info {
     width: 80%;
     margin: 1.5rem auto 4rem;
@@ -1104,15 +918,6 @@ footer .contact a {
   }
   .solution_wrap .solution_contents .solution_box .benefit p {
     font-size: 1.2rem;
-  }
-  .merit_wrap .merit_contents .left_merit .arrow {
-    width: 10.5%;
-  }
-  .merit_wrap .merit_contents .merit_card {
-    padding: 0;
-  }
-  .merit_wrap .merit_graph_wrap .notation {
-    padding: 1rem;
   }
   .method_wrap .method {
     margin-bottom: 3rem;
@@ -1135,17 +940,17 @@ footer .contact a {
     margin-right: 1.5rem;
   }
   .method_wrap .method_3_icon_wrap,
-.method_wrap .method_4_icon_wrap {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .method_wrap .method_4_icon_wrap {
+    flex-direction: column;
     margin-bottom: 1rem;
   }
   .method_wrap .method_3_icon_wrap p,
-.method_wrap .method_4_icon_wrap p {
+  .method_wrap .method_4_icon_wrap p {
     width: 100%;
     margin-bottom: 2rem;
+  }
+  .method_wrap .method_3_icon_wrap div {
+    width: auto;
   }
   .voc_wrap .voc_contents {
     padding: 2rem 1rem 1rem;
@@ -1163,13 +968,8 @@ footer .contact a {
     margin-top: 2rem;
   }
   .detail_wrap table tbody, .detail_wrap table td, .detail_wrap table tfoot, .detail_wrap table th, .detail_wrap table thead, .detail_wrap table tr {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .detail_wrap table th {
     width: 100%;
@@ -1179,13 +979,8 @@ footer .contact a {
   }
   .detail_wrap table .flow_wrap div {
     padding: 0.7rem 0.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
   }
   .detail_wrap table .flow_wrap div .schedule {
@@ -1195,9 +990,7 @@ footer .contact a {
     line-height: 1.5rem;
   }
   .detail_wrap table .option_detail_wrap {
-    -webkit-box-align: initial;
-        -ms-flex-align: initial;
-            align-items: initial;
+    align-items: initial;
   }
   .detail_wrap table .option_detail_wrap .option_details span {
     text-align: center;
@@ -1214,17 +1007,10 @@ footer .contact a {
     font-size: 1.2rem;
   }
   footer .footer_nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   footer .footer_nav div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   footer .footer_nav div a {

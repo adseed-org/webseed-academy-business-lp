@@ -128,7 +128,7 @@ nav {
   background-size: cover;
   width: 100%;
   height: 80vh;
-  min-height: 700px;
+  min-height: 650px;
   .fv {
     position: relative;
     width: 100%;
@@ -142,6 +142,9 @@ nav {
       text-shadow: 0 0 50px $white;
       .heading {
         font-size: 2rem;
+        .under_line {
+          background: linear-gradient(to bottom, transparent 45%, $under_line 45%);
+        }
         .dot_text {
           padding-top: .4em;
           background-position: top left -2px;
@@ -181,7 +184,7 @@ nav {
     .fv_btn_wrap {
       width: 25%;
       position: absolute;
-      bottom: 13%;
+      bottom: 20%;
       left: 23%;
     }
     .fv_text {
@@ -232,7 +235,7 @@ nav {
     margin: 4rem 0;
     p {
       span {
-        color: $card_title;
+        color: $gold;
         strong {
           font-size: 3.5rem;
         }
@@ -252,7 +255,7 @@ nav {
     display: flex;
     justify-content: center;
     .solution_box {
-      width: 45%;
+      width: 60%;
       margin: 0 1rem;
       background-color: $solution_bg;
       box-shadow: 2px 2px 5px $shadow_1;
@@ -261,7 +264,7 @@ nav {
       color: $solution_text;
       position: relative;
       .title {
-        font-size: 1.2rem;
+        font-size: 1rem;
         border-radius: 1rem 1rem 0 0;
         color: $white;
         text-align: center;
@@ -271,43 +274,13 @@ nav {
         background: -webkit-linear-gradient(left, $solution_1, $solution_2);
         background: linear-gradient(to right, $solution_1, $solution_2);
       }
-      .arrow_bar {
-        position: absolute;
-        background-color: $arrow_bg;
-        width: 30px;
-        height: 49.5%;
-        margin: auto;
-        top: 25%;
-        left: 0;
-        right: 0;
-      }
-      .arrow_head {
-        position: absolute;
-        content: '';
-        width: 15px;
-        height: 3%;
-        border: solid 15px transparent;
-        border-top: solid 15px $arrow_bg;
-        margin: auto;
-        top: 74.4%;
-        left: 0;
-        right: 0;
+      .detail {
+        padding: 0 2rem;
       }
       p {
         margin: 0;
-      }
-      .solution_list {
-        margin: 1.5rem;
-        background-color: $white;
-        box-shadow: 2px 2px 5px $shadow_1;
-        border-radius: .25rem;
-        padding: 1rem;
-        height: 5rem;
-        position: relative;
-        z-index: 100;
-        .one_line {
-          line-height: 3rem;
-        }
+        margin-top: 1.1rem;
+        text-align: left;
       }
       .under_line {
         color: $text;
@@ -324,123 +297,64 @@ nav {
   }
 }
 
-// メリット
-.merit_wrap {
-  background-color: $merit_bg;
-  padding: 0 0 5rem;
-  h2 {
-    color: $text;
-  }
-  .merit_contents {
-    display: flex;
-    justify-content: center;
-    color: $merit_text;
-    .left_merit {
-      // 上段メリット
-      .left_merit_1 {
-        margin-right: 5rem;
-        p {
-          margin: 0 0 .3rem;
-        }
-      }
-      .arrow {
-        margin: 1rem 7rem;
-        width: 10%;
-        height: 8.5%;
-        border: 3.5px solid;
-        border-color: transparent transparent $border_orange $border_orange;
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-      }
-      // 下段メリット
-      .left_merit_2 {
-        margin-top: 2.5rem;
-        .merit {
-          margin-bottom: 1rem;
-          p {
-            font-size: 2rem;
-            margin: 0;
-            line-height: 2.5rem;
-            span {
-              color: $orange;
-              strong {
-                font-size: 2.7rem;
-                font-weight: 400;
-              }
-            }
-          }
-        }
-        .notation {
-          font-size: .8rem;
-          p {
-            margin: 0 0 .1rem;
-          }
-        }
-      }
+// 選ばれる理由
+.reason_wrap {
+  .reason_contents {
+    width: 60%;
+    margin: 5rem auto 7rem;
+    h2 {
+      font-weight: bold;
+      margin-bottom: .75rem;
     }
-    .right_merit {
-      margin-left: 5rem;
-      .merit_card {
-        background-color: $white;
-        box-shadow: 2px 2px 5px $shadow_1;
-        padding: 1rem 3rem 0;
-        border-radius: .3rem;
-        text-align: center;
-        p {
-          margin: 0;
-        }
-        .title {
-          font-size: .9rem;
-          color: $card_title;
-        }
-        .compare {
-          display: flex;
-          justify-content: center;
-          font-size: 1.7rem;
-          margin-top: .5rem;
-          p {
-            line-height: 4.5rem;
-          }
-          span {
-            vertical-align: bottom;
-            strong {
-              font-weight: 300;
-              font-size: 2.5rem;
-            }
-          }
-          .after_training {
-            color: $orange;
-          }
-        }
-      }
-      // 矢印
-      .arrow {
-        margin: 1rem auto 2.5rem;
-        position:relative;
-        height: 35px;
-        width: 30px;
-        background-color: $merit_arrow;
-        &:before {
-          position:absolute;
-          content:"";
-          border: solid 30px transparent;
-          border-top: solid 30px $merit_arrow;
-          top: 30px;
-          right: -15px;
-        }
-      }
+    h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
     }
-  }
-  .merit_graph_wrap {
-    width: 100%;
-    margin: 4rem auto 0;
-    text-align: center;
-    .merit_graph {
+    img {
       width: 100%;
-      height: 100%;
     }
-    .notation {
-      display: none;
+    .details_wrap {
+      display: flex;
+      margin-bottom: 5rem;
+      // 画像作成用
+      gap: 3rem;
+      position: relative;
+      .details {
+        width: 50%;
+        text-align: center;
+        .icon {
+          margin: 1rem auto;
+          background-color: $gold;
+          color: $white;
+          border-radius: 9999px;
+          width: 10rem;
+          text-align: center;
+          padding: 1rem;
+        }
+        .img_wrap {
+          img {
+            width: 350px;
+            height: 216px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+          }
+        }
+        .text {
+          width: 50%;
+          margin: 1rem auto;
+          text-align: left;
+          min-width: 50%;
+        }
+      }
+      .arrow_wrap {
+        border-top: solid 10px $gold;
+        border-right: solid 10px $gold;
+        width: 2.5rem;
+        height: 2.5rem;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 45%;
+        left: 46.6%;
+      }
     }
   }
 }
@@ -950,6 +864,11 @@ footer {
       font-size: 1.5rem;
     }
   }
+  .reason_wrap {
+    .reason_contents {
+      width: 65%;
+    }
+  }
   // お悩み
   .solution_wrap {
     background-size: cover;
@@ -958,55 +877,6 @@ footer {
       .solution_box {
         width: 80%;
         margin: 2rem auto;
-      }
-    }
-  }
-  // メリット
-  .merit_wrap {
-    .merit_contents  {
-      flex-direction: column;
-      .left_merit {
-        margin-bottom: 2rem;
-        .left_merit_1 {
-          margin: 0;
-          font-size: 1.5rem;
-          font-weight: bold;
-        }
-        text-align: center;
-        .arrow {
-          width: 7.5%;
-          height: 44px;
-          margin: 0rem 45%;
-        }
-        .notation {
-          display: none;
-        }
-      }
-      .right_merit {
-        margin: 0;
-        .merit_card {
-          width: 80%;
-          margin: 0 auto;
-          padding: 1rem 0rem 0;
-          .title {
-            font-size: 1.2rem;
-          }
-          p {
-            font-size: 1.1rem;
-          }
-          .compare {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-    .merit_graph_wrap {
-      .notation {
-        display: block;
-        text-align: left;
-        p {
-          margin-bottom: .2rem;
-        }
       }
     }
   }
@@ -1029,13 +899,70 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .detail_wrap {
+    table {
+      .price_wrap {
+        strong {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .solution_wrap {
+    .solution_contents {
+      .solution_box {
+        width: 100%;
+      }
+    }
+  }
   .cta_wrap {
     .btn_wrap {
-    flex-direction: column;
+      flex-direction: column;
     }
     .document_btn, .contact_btn {
       margin: .5rem auto 1rem;
     }
+  }
+  .reason_wrap {
+    margin-bottom: 5rem;
+    .reason_contents {
+      margin-bottom: 0;
+      width: 90%;
+    }
+  }
+  .solution_wrap {
+    .solution_contents {
+      .solution_box {
+        .benefit {
+          margin: 2rem 0;
+        }
+      }
+    }
+  }
+  .method_wrap {
+    .method_contents {
+      .method_card_wrap {
+        width: 85%;
+      }
+    }
+    .method_3_icon_wrap,
+    .method_4_icon_wrap {
+      flex-direction: column;
+      margin-bottom: 1rem;
+      p {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .contents {
+    width: 85%;
+  }
+  .sp_w_5rem {
+    width: 5rem;
+  }
+  .sp_none {
+    display: none !important;
   }
 }
 
@@ -1056,8 +983,8 @@ footer {
     min-height: 500px;
     .fv {
       .catch_copy_wrap {
-        top: 95px;
-        left: 7%;
+        top: 115px;
+        left: 6%;
         .heading {
           font-size: 1.3rem;
           .dot_text {
@@ -1076,6 +1003,11 @@ footer {
         margin: auto;
         width: 90%;
       }
+    }
+  }
+  .reason_wrap {
+    .reason_contents {
+      width: 95%;
     }
   }
   // WSAにできること
@@ -1100,24 +1032,6 @@ footer {
             font-size: 1.2rem;
           }
         }
-      }
-    }
-  }
-   // メリット
-  .merit_wrap {
-    .merit_contents {
-      .left_merit {
-        .arrow {
-          width: 10.5%;
-        }
-      }
-      .merit_card {
-        padding: 0;
-      }
-    }
-    .merit_graph_wrap {
-      .notation {
-        padding: 1rem;
       }
     }
   }
@@ -1152,6 +1066,11 @@ footer {
       p {
         width: 100%;
         margin-bottom: 2rem;
+      }
+    }
+    .method_3_icon_wrap {
+      div {
+        width: auto;
       }
     }
   }
