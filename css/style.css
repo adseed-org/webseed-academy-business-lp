@@ -48,12 +48,16 @@ header .btn_wrap {
 header .btn_wrap p {
   margin: 0;
 }
+header .btn_wrap .wsr_btn,
 header .btn_wrap .document_btn,
 header .btn_wrap .contact_btn {
   color: #fff !important;
   text-decoration: none;
   padding: 1.3rem 1rem;
   width: 128px;
+}
+header .btn_wrap .wsr_btn {
+  background: linear-gradient(to right, #F9BF00, #f5ff6b);
 }
 header .btn_wrap .document_btn {
   background: linear-gradient(to right, #379CDB, #51E5E7);
